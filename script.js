@@ -19,7 +19,7 @@ function render() {
             cell.classList.add(field);
             cell.innerText = field.toUpperCase();
         }
-        // Füge den Event-Listener nur hinzu, wenn das Spiel aktiv ist und das Feld noch nicht gesetzt wurde
+        
         if (gameActive && !fields[idx]) {
             cell.addEventListener('click', () => handleClick(idx));
         }
